@@ -113,7 +113,7 @@ class ProductTableViewCell: UITableViewCell {
     func configure(productName: String, productImage: String, productPrice: Double, productFinalPrice: Double, productVariants: [VariantInfoModel]) {
         productNameLabel.text = productName
         productPriceLabel.isHidden = productPrice == productFinalPrice
-        productPriceLabel.text = "$\(productPrice)"
+        productPriceLabel.attributedText = "$\(productPrice)".strikedThrough()
         productFinalPriceLabel.text = "$\(productFinalPrice)"
         self.variants = productVariants
         styleVariantsCollectionView.reloadData()
