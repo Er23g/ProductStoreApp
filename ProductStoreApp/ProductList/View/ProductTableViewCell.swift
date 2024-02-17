@@ -17,7 +17,6 @@ class ProductTableViewCell: UITableViewCell {
         let pImageView = UIImageView()
         pImageView.translatesAutoresizingMaskIntoConstraints = false
         pImageView.contentMode = .scaleAspectFit
-        pImageView.backgroundColor = .gray
         return pImageView
     }()
     
